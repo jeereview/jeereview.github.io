@@ -1,14 +1,148 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>note</title>
-    <script type="module" crossorigin src="/assets/main-BUmMAsJt.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/main-noqZyAsp.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jee | Couture & Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Luxury Mesh Background -->
+    <div class="bg-mesh"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="reveal">
+            <div class="profile-img-container">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=2564&auto=format&fit=crop"
+                    alt="Profile Picture">
+            </div>
+            <h1>Jee</h1>
+            <p class="bio">Fashion Curator. Editorial Stylist. Khơi nguồn cảm hứng từ những thiết kế kinh điển và đương
+                đại.</p>
+        </header>
+
+        <!-- Category Filter -->
+        <div class="categories reveal">
+            <button class="cat-btn active">Bộ Sưu Tập</button>
+            <button class="cat-btn">Váy Vóc</button>
+            <button class="cat-btn">Signature</button>
+            <button class="cat-btn">Phụ Kiện</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+
+            <!-- Product 1: Large Featured Card -->
+            <a href="#" class="product-card reveal">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=2574&auto=format&fit=crop"
+                        alt="Floral Dress">
+                    <span class="product-tag">Hàng Hiệu</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Đầm Voan Silk Pháp</h2>
+                    <p class="product-desc">Sự tinh khiết của lụa kết hợp họa tiết hoa tay thêu, mang lại cốt cách sang
+                        trọng và thanh tao.</p>
+                    <div class="product-footer">
+                        <span class="price">1.450k</span>
+                        <div class="btn-buy">Sỡ Hữu Ngay</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Product 2: Magazine Vertical Style -->
+            <a href="#" class="product-card reveal">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?q=80&w=2572&auto=format&fit=crop"
+                        alt="Silk Shirt Luxury">
+                    <span class="product-tag">Must Have</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Sơ Mi Lụa Ý</h2>
+                    <p class="product-desc">Chất liệu cao cấp không nhăn, phom dáng chuẩn cho vẻ ngoài lịch thiệp tối
+                        thượng.</p>
+                    <div class="product-footer">
+                        <span class="price">890k</span>
+                        <div class="btn-buy">Khám Phá</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Product 3 -->
+            <a href="#" class="product-card reveal">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=2574&auto=format&fit=crop"
+                        alt="Leather Bag">
+                    <span class="product-tag">Limited</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Túi Da Cá Sấu Nâu</h2>
+                    <p class="product-desc">Sản xuất giới hạn 10 chiếc trên toàn thế giới. Đẳng cấp và độc bản.</p>
+                    <div class="product-footer">
+                        <span class="price">3.250k</span>
+                        <div class="btn-buy">Đặt Hàng</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Product 4 -->
+            <a href="#" class="product-card reveal">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=2570&auto=format&fit=crop"
+                        alt="Heels">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-name">Stiletto Heels</h2>
+                    <p class="product-desc">Đôi giày đen cơ bản mà mọi quý cô đều cần. Tinh tế trong từng đường kim mũi
+                        chỉ.</p>
+                    <div class="product-footer">
+                        <span class="price">920k</span>
+                        <div class="btn-buy">Sắm Ngay</div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links reveal">
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fas fa-paper-plane"></i></a>
+        </div>
+    </div>
+
+    <!-- Scroll Reveal Script -->
+    <script>
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+        // Profile image parallax effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const profile = document.querySelector('.profile-img-container img');
+            if (profile) {
+                profile.style.transform = `translateY(${scrolled * 0.1}px) scale(${1 + scrolled * 0.0002})`;
+            }
+        });
+    </script>
+</body>
+
 </html>
